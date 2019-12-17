@@ -1,0 +1,19 @@
+{
+    "name": "armonia-tech/armonia-pdf",
+    "description": "Wrapper for 3rd party pdf renderer",
+    "keywords": ["armonia", "armonia tech", "pdf"],
+    "license": "BSD-3-Clause", 
+    "authors": [
+        {
+            "name": "AT-Brian",
+            "email": "fooloong.wong@armonia-tech.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "ArmoniaPDF\\": "src/" }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "dompdf/dompdf": "^0.8.3"
+    }
+}
