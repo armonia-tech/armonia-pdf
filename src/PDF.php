@@ -62,13 +62,10 @@ class PDF
         $this->dompdf->setPaper($size, $orientation);
     }
 
-    public function render()
-    {
-        return $this->dompdf->render();
-    }
-
     public function stream($file_name, $options)
     {
+        $this->dompdf->render();
+
         return $this->dompdf->stream($file_name, $options);
     }
 }
