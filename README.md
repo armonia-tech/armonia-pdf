@@ -16,7 +16,7 @@ In your project's composer.json, add the following:
 ```
 then run in cli:
 
-`composer require armonia-tech/armonia-pdf`
+`composer require armonia-tech/armonia-pdf:dev-master`
 
 ---
 
@@ -35,7 +35,7 @@ In your project's composer.json, add the following:
 ```
 then run in cli:
 
-`composer require armonia-tech/armonia-pdf`
+`composer require armonia-tech/armonia-pdf:dev-master`
 
 ---
 
