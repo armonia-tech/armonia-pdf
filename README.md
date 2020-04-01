@@ -5,16 +5,7 @@ A library to convert html to pdf
 ---
 
 ## Add to Project
-In your project's composer.json, add the following:
-```json
-"repositories": [
-    {
-        "type": "git",
-        "url":  "https://at-brian@bitbucket.org/at-brian/armonia-pdf.git"
-    }
-]
-```
-then run in cli:
+In your project's directory run in cli:
 
 `composer require armonia-tech/armonia-pdf:dev-master`
 
@@ -22,7 +13,9 @@ then run in cli:
 
 ## Development
 
-`git clone https://at-brian@bitbucket.org/at-brian/armonia-pdf.git`
+Go up 1 level from your project's directory,  run in cli:
+
+`git clone https://github.com/armonia-tech/armonia-pdf.git`
 
 In your project's composer.json, add the following:
 ```json
