@@ -16,20 +16,6 @@ class PDF
 
     public function __construct(Options $options = null)
     {
-        if ($options == null) {
-            $font_cache_dir = (getenv('FONT_CACHE_DIR') ?: '/storage/cache/pdf');
-            $font_cache_dir = trim($font_cache_dir, '/');
-            $font_cache_dir = APP_PATH . '/' . $font_cache_dir;
-
-            if (!file_exists($font_cache_dir)) {
-                mkdir($font_cache_dir, 0755, true);
-            }
-
-            $options = new Options;
-            $options->setFontDir($font_cache_dir);
-            $options->setFontCache($font_cache_dir);
-        }
-
         $this->dompdf = new Dompdf($options);
     }
 
