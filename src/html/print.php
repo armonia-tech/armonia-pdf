@@ -6,8 +6,8 @@ return function ($title, $extra_css, $content) {
      * Include the font in PDF, so that PDF will process the file and embed into pdf output
      * You can put an absolute path to your font file in your system or use external font file via http://
      */
-    $font_path = PDF::FONTS_DIR . '/MPLUS1p-Bold.ttf';
-    $font_path_1 = PDF::FONTS_DIR . '/MPLUS1p-Regular.ttf';
+    $font_path = PDF::FONTS_DIR . '/migu-1p-bold.ttf';
+    $font_path_1 = PDF::FONTS_DIR . '/migu-1p-regular.ttf';
 
     return <<<HTML
 <!DOCTYPE html>
@@ -28,15 +28,15 @@ return function ($title, $extra_css, $content) {
     }
 
     @font-face {
-        font-family: 'MPLUS1p-Bold';
-        font-style: 13px;
+        font-family: 'MIGU-1p-Bold';
+        font-style: normal;
         font-weight: bold;
         line-height: .9;
         letter-spacing: 0;
         src: url('{$font_path}') format('truetype');
     }
     @font-face {
-        font-family: 'MPLUS1p-Regular';
+        font-family: 'MIGU-1p-Regular';
         font-style: normal;
         font-weight: 400;
         line-height: .9;
@@ -44,7 +44,7 @@ return function ($title, $extra_css, $content) {
         src: url('{$font_path_1}') format('truetype');
     }
     body {
-        font-family: 'MPLUS1p-Regular', sans-serif;
+        font-family: 'MIGU-1p-Regular', sans-serif;
     }
 
     small {
@@ -54,7 +54,7 @@ return function ($title, $extra_css, $content) {
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
         padding: 0;
-        font-family: 'MPLUS1p-Regular', sans-serif;
+        font-family: 'MIGU-1p-Regular', sans-serif;
         font-weight: normal;
     }
 
@@ -84,7 +84,7 @@ return function ($title, $extra_css, $content) {
 
     strong, b, em,
     table th {
-        font-family: 'MPLUS1p-Bold', sans-serif;
+        font-family: 'MIGU-1p-Bold', sans-serif;
         font-weight: bold;
     }
 
