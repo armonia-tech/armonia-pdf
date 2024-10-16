@@ -57,4 +57,14 @@ class PDF
 
         return $this->dompdf->stream($file_name, $options);
     }
+
+    public function render()
+    {
+        return $this->dompdf->render();
+    }
+
+    public function output($options = [])
+    {
+        return $this->dompdf->output($options);
+    }
 }
